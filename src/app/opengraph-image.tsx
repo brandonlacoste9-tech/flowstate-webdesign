@@ -43,7 +43,7 @@ export default function OpenGraphImage() {
           We rebuild the site you have.
         </div>
         <div style={{ fontSize: 24, marginTop: 22, color: "#b4aea3" }}>
-          flowstate-webdesign.com
+          flowstate-designs.netlify.app
         </div>
       </div>
     ),

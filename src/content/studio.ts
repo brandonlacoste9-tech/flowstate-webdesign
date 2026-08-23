@@ -1,8 +1,8 @@
 export const studio = {
   name: "Flowstate",
   legalName: "Flowstate Design",
-  domain: "flowstate-webdesign.com",
-  url: "https://flowstate-webdesign.com",
+  domain: "flowstate-designs.netlify.app",
+  url: "https://flowstate-designs.netlify.app",
   email: "brandonlacoste9@gmail.com",
   emailHref: "mailto:brandonlacoste9@gmail.com",
   phone: "514-348-1161",

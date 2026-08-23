@@ -41,8 +41,8 @@ export const processSteps: ProcessStep[] = [
       fr: "Vous décidez",
     },
     body: {
-      en: "You get a preview. Your old site can stay up until you say switch. Then we put the new one on your domain — flowstate-webdesign.com is ours; yours stays yours.",
-      fr: "Vous recevez un aperçu. L’ancien site peut rester jusqu’au basculement. Ensuite on met le nouveau sur votre domaine — flowstate-webdesign.com est le nôtre; le vôtre reste le vôtre.",
+      en: "You get a preview. Your old site can stay up until you say switch. Then we put the new one on your domain — flowstate-designs.netlify.app is ours; yours stays yours.",
+      fr: "Vous recevez un aperçu. L’ancien site peut rester jusqu’au basculement. Ensuite on met le nouveau sur votre domaine — flowstate-designs.netlify.app est le nôtre; le vôtre reste le vôtre.",
     },
   },
 ];

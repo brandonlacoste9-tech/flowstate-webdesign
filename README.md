@@ -1,6 +1,6 @@
 # Flowstate
 
-Studio site for **Flowstate** (`flowstate-webdesign.com`) — rebuilds, redesigns, and brand-new websites.
+Studio site for **Flowstate** (`https://flowstate-designs.netlify.app`) — rebuilds, redesigns, and brand-new websites.
 
 Montreal · 514-348-1161
 

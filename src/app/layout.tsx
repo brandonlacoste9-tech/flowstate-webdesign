@@ -19,7 +19,7 @@ const display = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://flowstate-webdesign.com"),
+  metadataBase: new URL("https://flowstate-designs.netlify.app"),
   title: {
     default: "Flowstate",
     template: "%s · Flowstate",
