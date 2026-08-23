@@ -31,6 +31,18 @@ export function Button({
   );
 
   if (href) {
+    if (
+      href.startsWith("tel:") ||
+      href.startsWith("mailto:") ||
+      href.startsWith("http://") ||
+      href.startsWith("https://")
+    ) {
+      return (
+        <a href={href} className={classes}>
+          {children}
+        </a>
+      );
+    }
     return (
       <Link href={href} className={classes}>
         {children}

@@ -18,7 +18,7 @@
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montréal",
     "title": "On refait le site que vous avez.\nOn construit aussi celui que vous n’avez pas.",
-    "subtitle": "Un studio à Montréal. Sites Next.js pour restos, métiers, cliniques et commerces — honnêtes sur les heures, les salles, et comment vous prenez vraiment une table.",
+    "subtitle": "Un studio à Montréal. Sites pour restos, cliniques et commerces — honnêtes sur les heures, les salles, et comment vous prenez vraiment une table.",
     "kicker": "Refontes  ·  Sites neufs  ·  Honnête sur la salle",
     "point1": "Refontes et redesigns de sites en ligne",
     "point2": "Sites neufs à partir d’un nom et d’un téléphone",
@@ -70,6 +70,7 @@
     "description": "Refontes de vrais sites. On ne prétend pas avoir déjà remplacé leurs pages en ligne.",
     "viewCase": "Lire la refonte",
     "viewPreview": "Ouvrir la refonte en ligne",
+    "theirSite": "Leur site",
     "challenge": "Ce qui était là",
     "approach": "Ce qu’on a fait",
     "outcome": "Où ça en est",
@@ -95,8 +96,9 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "Appelez le studio, ou envoyez le formulaire. Si vous avez un site, collez l’URL dans le message.",
-    "directEmail": "Appelez le studio :",
+    "description": "Appelez. Si vous avez un site, collez l’URL dans le formulaire.",
+    "directEmail": "Ligne du studio",
+    "call": "Appeler le studio",
     "name": "Nom",
     "email": "Courriel",
     "projectType": "Ce dont vous avez besoin",

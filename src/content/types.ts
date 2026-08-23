@@ -9,6 +9,8 @@ export type CaseStudy = {
   featured: boolean;
   accent: string;
   image: string;
+  /** Screenshot of their current live site, for before/after on work cards. */
+  beforeImage?: string;
   liveUrl?: string;
   previewUrl?: string;
   /** Short name on work cards. Full sentence stays on `title`. */

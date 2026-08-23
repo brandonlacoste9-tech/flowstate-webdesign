@@ -67,7 +67,7 @@ export function ContactForm() {
   const sending = state === "sending";
 
   return (
-    <form onSubmit={onSubmit} className="relative mt-10 max-w-xl space-y-5" noValidate>
+    <form onSubmit={onSubmit} className="relative max-w-xl space-y-5" noValidate>
       {/* Honeypot — hidden from humans */}
       <div
         className="absolute -left-[9999px] h-0 w-0 overflow-hidden"

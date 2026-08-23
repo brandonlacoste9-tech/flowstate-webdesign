@@ -2,9 +2,11 @@ import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { Button } from "@/components/ui/Button";
+import { studio } from "@/content/studio";
 
 export function FinalCta() {
   const t = useTranslations("home");
+  const tContact = useTranslations("contact");
 
   return (
     <section className="pb-24 pt-8 sm:pb-32">
@@ -28,9 +30,15 @@ export function FinalCta() {
                   {t("finalBody")}
                 </p>
               </div>
-              <Button href="/contact" className="shrink-0">
-                {t("finalCta")}
-              </Button>
+              <div className="flex shrink-0 flex-col items-start gap-3 sm:items-end">
+                <a
+                  href={studio.phoneHref}
+                  className="font-display text-2xl text-text transition-colors hover:text-accent sm:text-3xl"
+                >
+                  {studio.phone}
+                </a>
+                <Button href="/contact">{tContact("call")}</Button>
+              </div>
             </div>
           </div>
         </FadeIn>

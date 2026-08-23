@@ -18,7 +18,7 @@
   "hero": {
     "eyebrow": "flowstate-webdesign.com · Montreal",
     "title": "We rebuild the site you have.\nWe also build the one you don’t.",
-    "subtitle": "A Montreal studio. Next.js sites for restaurants, trades, clinics, and local businesses — honest about hours, rooms, and how you actually take a table.",
+    "subtitle": "A Montreal studio. Sites for restaurants, clinics, and local businesses — honest about hours, rooms, and how you actually take a table.",
     "kicker": "Rebuilds  ·  New sites  ·  Honest about the room",
     "point1": "Rebuilds and redesigns of live sites",
     "point2": "Brand-new websites from a name and a phone",
@@ -70,6 +70,7 @@
     "description": "Rebuilds of real sites. We don’t claim we already replaced their live pages.",
     "viewCase": "Read the rebuild",
     "viewPreview": "Open the live rebuild",
+    "theirSite": "Their site",
     "challenge": "What was there",
     "approach": "What we did",
     "outcome": "Where it stands",
@@ -95,8 +96,9 @@
   },
   "contact": {
     "title": "Contact",
-    "description": "Call the studio, or send the form. If you have a live site, paste the URL in the message.",
-    "directEmail": "Call the studio:",
+    "description": "Call. If you have a live site, paste the URL in the form.",
+    "directEmail": "Studio line",
+    "call": "Call the studio",
     "name": "Name",
     "email": "Email",
     "projectType": "What you need",

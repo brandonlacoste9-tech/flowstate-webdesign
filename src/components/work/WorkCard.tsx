@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { CaseStudy, Locale } from "@/content/types";
 import { getWorkHref, getWorkHost } from "@/content/case-studies";
@@ -17,6 +18,7 @@ export function WorkCard({
   size?: "md" | "lg";
   priority?: boolean;
 }) {
+  const t = useTranslations("work");
   const href = getWorkHref(study);
   const host = getWorkHost(study);
   const name = study.name[locale];
@@ -43,6 +45,23 @@ export function WorkCard({
         }
         className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.045]"
       />
+      {study.beforeImage ? (
+        <div className="absolute right-3 top-3 z-10 w-[42%] max-w-[200px] overflow-hidden border border-white/25 bg-bg shadow-[0_8px_24px_rgba(0,0,0,0.45)] sm:right-4 sm:top-4">
+          <div className="relative aspect-[16/10]">
+            <Image
+              src={study.beforeImage}
+              alt=""
+              fill
+              unoptimized
+              sizes="200px"
+              className="object-cover object-top"
+            />
+          </div>
+          <p className="bg-black/75 px-2 py-1 font-mono text-[8px] uppercase tracking-[0.14em] text-text/90">
+            {t("theirSite")}
+          </p>
+        </div>
+      ) : null}
       <div
         className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-black/80 to-transparent"
         aria-hidden

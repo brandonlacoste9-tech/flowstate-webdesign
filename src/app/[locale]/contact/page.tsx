@@ -1,8 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { ContactForm } from "@/components/contact/ContactForm";
+import { Button } from "@/components/ui/Button";
 import { studio } from "@/content/studio";
 
 export async function generateMetadata({
@@ -31,40 +31,31 @@ export default async function ContactPage({
   return (
     <section className="py-16 sm:py-24">
       <Container>
-        <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          <div>
-            <FadeIn>
-              <SectionHeading title={t("title")} description={t("description")} />
-              <p className="mt-4 text-sm text-muted">
-                {t("directEmail")}{" "}
-                <a
-                  href={studio.phoneHref}
-                  className="text-accent transition-colors hover:text-accent-hover"
-                >
-                  {studio.phone}
-                </a>
-              </p>
-            </FadeIn>
-            <FadeIn delay={0.08}>
-              <div className="mt-10">
-                <ContactForm />
-              </div>
-            </FadeIn>
-          </div>
-
-          <FadeIn delay={0.1}>
-            <div className="border-t border-border/80 pt-6 lg:mt-4">
-              <p className="font-display text-5xl leading-none text-text sm:text-6xl">
-                {studio.city[locale as "en" | "fr"]}
-              </p>
-              <a
-                href={studio.phoneHref}
-                className="mt-6 block font-display text-2xl text-muted transition-colors hover:text-accent"
-              >
-                {studio.phone}
-              </a>
-              <p className="mt-2 text-sm text-muted">{studio.domain}</p>
+        <div className="grid items-start gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+          <FadeIn>
+            <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+              {t("directEmail")}
+            </p>
+            <h1 className="mt-4 font-display text-5xl leading-[1.05] text-text sm:text-6xl lg:text-7xl">
+              {t("title")}
+            </h1>
+            <a
+              href={studio.phoneHref}
+              className="mt-8 block font-display text-4xl leading-none text-text transition-colors hover:text-accent sm:text-5xl"
+            >
+              {studio.phone}
+            </a>
+            <p className="mt-4 text-base text-muted">{t("description")}</p>
+            <p className="mt-2 text-sm text-muted">
+              {studio.city[locale as "en" | "fr"]} · {studio.domain}
+            </p>
+            <div className="mt-8">
+              <Button href={studio.phoneHref}>{t("call")}</Button>
             </div>
+          </FadeIn>
+
+          <FadeIn delay={0.08}>
+            <ContactForm />
           </FadeIn>
         </div>
       </Container>

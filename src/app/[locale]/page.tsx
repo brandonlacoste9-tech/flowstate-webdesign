@@ -3,9 +3,6 @@ import { Hero } from "@/components/home/Hero";
 import { WorkMarquee } from "@/components/home/WorkMarquee";
 import { ProofStrip } from "@/components/home/ProofStrip";
 import { FeaturedWork } from "@/components/home/FeaturedWork";
-import { PackagesTeaser } from "@/components/home/PackagesTeaser";
-import { ProcessSection } from "@/components/home/ProcessSection";
-import { AboutSnippet } from "@/components/home/AboutSnippet";
 import { FinalCta } from "@/components/home/FinalCta";
 
 export async function generateMetadata({
@@ -44,9 +41,6 @@ export default async function HomePage({
       <WorkMarquee />
       <FeaturedWork />
       <ProofStrip />
-      <PackagesTeaser />
-      <ProcessSection />
-      <AboutSnippet />
       <FinalCta />
     </>
   );

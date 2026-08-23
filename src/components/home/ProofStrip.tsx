@@ -1,30 +1,35 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { studio } from "@/content/studio";
 
 export function ProofStrip() {
   const t = useTranslations("proof");
 
-  const items = [
-    { label: t("montreal"), detail: t("montrealDetail") },
-    { label: t("bilingual"), detail: t("bilingualDetail") },
-    { label: t("response"), detail: t("responseDetail") },
-    { label: t("craft"), detail: t("craftDetail") },
-  ] as const;
-
   return (
-    <section className="border-y border-border/60 py-12 sm:py-16">
+    <section className="border-y border-border/60 py-14 sm:py-20">
       <Container>
         <FadeIn>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
-            {items.map((item) => (
-              <div key={item.label} className="space-y-2">
-                <p className="font-display text-2xl text-text sm:text-[1.65rem]">
-                  {item.label}
-                </p>
-                <p className="text-sm leading-relaxed text-muted">{item.detail}</p>
-              </div>
-            ))}
+          <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-end">
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
+                {t("response")}
+              </p>
+              <a
+                href={studio.phoneHref}
+                className="mt-3 block font-display text-4xl leading-none text-text transition-colors hover:text-accent sm:text-5xl lg:text-6xl"
+              >
+                {studio.phone}
+              </a>
+              <p className="mt-4 max-w-md text-sm leading-relaxed text-muted">
+                {t("responseDetail")}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted">
+              <span>{t("montreal")}</span>
+              <span>{t("bilingual")}</span>
+              <span>{t("craft")}</span>
+            </div>
           </div>
         </FadeIn>
       </Container>

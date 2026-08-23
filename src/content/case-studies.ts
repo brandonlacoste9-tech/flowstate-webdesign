@@ -8,6 +8,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#7a1f24",
     image: "/work/joes-italian.jpg",
+    beforeImage: "/work/before-joes-italian.jpg",
     liveUrl: "https://joesitaliankitchen.ca",
     name: {
       en: "Joe’s Italian Kitchen",
@@ -41,6 +42,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#c45c26",
     image: "/work/wellington-diner.jpg",
+    beforeImage: "/work/before-wellington-diner.jpg",
     liveUrl: "https://www.wellingtondiner.com/",
     previewUrl: "https://wellington-diner.netlify.app",
     name: {
@@ -75,6 +77,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#6b1c23",
     image: "/work/scarolies.jpg",
+    beforeImage: "/work/before-scarolies.jpg",
     liveUrl: "http://www.scarolies.com/",
     previewUrl: "https://scarolies.netlify.app",
     name: {
@@ -109,6 +112,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#0f6b6b",
     image: "/work/mednam.jpg",
+    beforeImage: "/work/before-mednam.jpg",
     liveUrl: "https://cliniquemednam.com/en/",
     previewUrl: "https://mednam.netlify.app",
     name: {
@@ -143,6 +147,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#3d4a32",
     image: "/work/brasserie-manoir.jpg",
+    beforeImage: "/work/before-brasserie-manoir.jpg",
     liveUrl: "https://www.brasseriemanoir.com/",
     previewUrl: "https://brasserie-le-manoir.netlify.app",
     name: {
@@ -177,6 +182,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#1a5f4a",
     image: "/work/sante-kildare.jpg",
+    beforeImage: "/work/before-sante-kildare.jpg",
     liveUrl: "https://www.santekildare.ca/",
     previewUrl: "https://santekildare.netlify.app",
     name: {
@@ -211,6 +217,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#4a1520",
     image: "/work/intermezzo-vernon.jpg",
+    beforeImage: "/work/before-intermezzo-vernon.jpg",
     liveUrl: "https://intermezzowinecellar.com/",
     previewUrl: "https://intermezzo-vernon.netlify.app",
     name: {
@@ -245,6 +252,7 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
     accent: "#1e4a6e",
     image: "/work/clinique-mdcm.jpg",
+    beforeImage: "/work/before-clinique-mdcm.jpg",
     liveUrl: "https://mdcmclinic.com/",
     previewUrl: "https://clinique-mdcm-gmf.netlify.app",
     name: {

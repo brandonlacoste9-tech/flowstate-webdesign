@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div
-        className="flow-orb pointer-events-none absolute -left-1/4 top-[-20%] h-[420px] w-[420px] rounded-full opacity-25 blur-3xl sm:h-[560px] sm:w-[560px]"
+        className="flow-orb pointer-events-none absolute -left-1/4 top-[-20%] h-[420px] w-[420px] rounded-full opacity-10 blur-3xl sm:h-[560px] sm:w-[560px]"
         style={{
           background:
             "radial-gradient(circle, rgba(142,224,200,0.28) 0%, rgba(142,224,200,0.06) 45%, transparent 70%)",
