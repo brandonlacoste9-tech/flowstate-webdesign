@@ -85,6 +85,35 @@ body > * {
   z-index: 1;
 }
 
+@keyframes flow-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.flow-wordmark {
+  background-image: linear-gradient(
+    110deg,
+    #f3eee6 0%,
+    #c45c4a 18%,
+    #e8a05a 38%,
+    #8ee0c8 58%,
+    #f3eee6 78%,
+    #c45c4a 100%
+  );
+  background-size: 240% 240%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: flow-shift 10s ease-in-out infinite;
+}
+
 @keyframes flow-drift {
   0%,
   100% {
@@ -153,7 +182,15 @@ body > * {
   .flow-orb,
   .logo-wave,
   .logo-wave-delay,
-  .marquee-track {
+  .marquee-track,
+  .flow-wordmark {
     animation: none;
+  }
+
+  .flow-wordmark {
+    background: none;
+    color: var(--text);
+    -webkit-background-clip: unset;
+    background-clip: unset;
   }
 }

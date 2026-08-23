@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { FlowLogo } from "@/components/brand/FlowLogo";
 import { WorkStage } from "@/components/work/WorkStage";
 import { getFeaturedCaseStudies } from "@/content/case-studies";
 import type { Locale } from "@/content/types";
@@ -25,7 +26,11 @@ export function Hero() {
       <Container className="relative grid items-end gap-10 py-14 sm:py-16 lg:grid-cols-12 lg:gap-12 lg:py-20">
         <div className="lg:col-span-5">
           <FadeIn>
-            <p className="mb-5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+            <FlowLogo size="hero" href={false} />
+          </FadeIn>
+
+          <FadeIn delay={0.04}>
+            <p className="mb-5 mt-8 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
               {t("eyebrow")}
             </p>
           </FadeIn>
