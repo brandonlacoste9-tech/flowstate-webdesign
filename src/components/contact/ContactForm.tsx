@@ -255,6 +255,8 @@ export function ContactForm() {
         />
       </div>
 
+      <p className="text-xs leading-relaxed text-muted">{t("privacy")}</p>
+
       <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center">
         <Button type="submit" disabled={sending} className="disabled:opacity-60">
           {sending ? t("sending") : t("submit")}

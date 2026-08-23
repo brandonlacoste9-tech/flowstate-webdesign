@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { CaseStudy, Locale } from "@/content/types";
-import { getWorkHref, getWorkHost } from "@/content/case-studies";
+import { getWorkHost } from "@/content/case-studies";
 import { cn } from "@/lib/utils";
 
 export function WorkCard({
@@ -19,7 +19,6 @@ export function WorkCard({
   priority?: boolean;
 }) {
   const t = useTranslations("work");
-  const href = getWorkHref(study);
   const host = getWorkHost(study);
   const name = study.name[locale];
   const large = size === "lg";
@@ -82,26 +81,13 @@ export function WorkCard({
           </h3>
           {host ? (
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.12em] text-text/75">
-              {host} →
+              {t("viewCase")}
             </p>
           ) : null}
         </div>
       </div>
     </>
   );
-
-  if (href) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className={cardClass}
-      >
-        {inner}
-      </a>
-    );
-  }
 
   return (
     <Link href={`/work/${study.slug}`} className={cardClass}>

@@ -1,8 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/Hero";
-import { WorkMarquee } from "@/components/home/WorkMarquee";
 import { ProofStrip } from "@/components/home/ProofStrip";
-import { FeaturedWork } from "@/components/home/FeaturedWork";
 import { DeviceProof } from "@/components/home/DeviceProof";
 import { FinalCta } from "@/components/home/FinalCta";
 
@@ -39,8 +37,6 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <WorkMarquee />
-      <FeaturedWork />
       <DeviceProof />
       <ProofStrip />
       <FinalCta />

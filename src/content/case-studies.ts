@@ -10,6 +10,7 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/joes-italian.jpg",
     beforeImage: "/work/before-joes-italian.jpg",
     liveUrl: "https://joesitaliankitchen.ca",
+    previewUrl: "https://joes-italian-kitchen.netlify.app",
     name: {
       en: "Joe’s Italian Kitchen",
       fr: "Joe’s Italian Kitchen",

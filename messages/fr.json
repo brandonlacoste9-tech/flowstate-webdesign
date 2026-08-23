@@ -25,7 +25,7 @@
     "point3": "On n’invente pas les prix, les heures, ni les outils de réservation",
     "ctaPrimary": "Démarrer un projet",
     "ctaSecondary": "Voir les projets",
-    "previewCaption": "Cliquez une photo — ça ouvre le site"
+    "previewCaption": "Cliquez une photo — lire la refonte"
   },
   "proof": {
     "montreal": "Montréal",
@@ -54,7 +54,7 @@
     "featuredDescription": "Cliniques, brasseries, et deux salles à Vernon. Même règle : leurs outils, pas des outils inventés.",
     "devicesEyebrow": "Sur l’écran",
     "devicesTitle": "Les refontes, sur un bureau",
-    "devicesDescription": "Joe’s, Wellington Diner, Clinique MedNam — les sites tels qu’ils s’affichent sur un portable et un téléphone.",
+    "devicesDescription": "Joe’s, Wellington Diner, Clinique MedNam — des refontes studio, telles qu’elles s’affichent sur un portable et un téléphone. Leur site actuel reste jusqu’au basculement.",
     "packagesEyebrow": "Ce qu’on fait",
     "packagesTitle": "Refonte. Site neuf. Sur mesure quand ce n’est pas une brochure.",
     "packagesCta": "Voir les services",
@@ -70,9 +70,10 @@
   },
   "work": {
     "title": "Projets",
-    "description": "Refontes de vrais sites. On ne prétend pas avoir déjà remplacé leurs pages en ligne.",
+    "description": "Ce sont des refontes de commerces en ligne. Leur site actuel reste jusqu’au basculement.",
     "viewCase": "Lire la refonte",
     "viewPreview": "Ouvrir la refonte en ligne",
+    "theirLiveSite": "Leur site actuel",
     "theirSite": "Leur site",
     "challenge": "Ce qui était là",
     "approach": "Ce qu’on a fait",
@@ -111,6 +112,7 @@
     "sending": "Envoi…",
     "success": "Reçu. On vous écrit.",
     "error": "Ça n’est pas parti. Appelez le studio au 514-348-1161.",
+    "privacy": "On utilise votre nom, courriel et message pour répondre. On ne les vend pas.",
     "types": {
       "rebuild": "Refonte / redesign de mon site",
       "new": "Site tout neuf",

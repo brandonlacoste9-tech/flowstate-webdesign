@@ -25,7 +25,7 @@
     "point3": "We don’t invent prices, hours, or booking tools",
     "ctaPrimary": "Start a project",
     "ctaSecondary": "See the work",
-    "previewCaption": "Click a photo — it opens the site"
+    "previewCaption": "Click a photo — read the rebuild"
   },
   "proof": {
     "montreal": "Montreal",
@@ -54,7 +54,7 @@
     "featuredDescription": "Clinics, brasseries, and two rooms in Vernon. Same rule: their tools, not invented ones.",
     "devicesEyebrow": "On glass",
     "devicesTitle": "The rebuilds, on a desk",
-    "devicesDescription": "Joe’s, Wellington Diner, Clinique MedNam — the sites as they look on a laptop and a phone.",
+    "devicesDescription": "Joe’s, Wellington Diner, Clinique MedNam — studio rebuilds, as they look on a laptop and a phone. Their current sites stay until they switch.",
     "packagesEyebrow": "What we do",
     "packagesTitle": "Rebuild. New site. Custom when it isn’t a brochure.",
     "packagesCta": "See services",
@@ -70,9 +70,10 @@
   },
   "work": {
     "title": "Work",
-    "description": "Rebuilds of real sites. We don’t claim we already replaced their live pages.",
+    "description": "These are rebuilds of live businesses. Their current site stays until they switch.",
     "viewCase": "Read the rebuild",
     "viewPreview": "Open the live rebuild",
+    "theirLiveSite": "Their current site",
     "theirSite": "Their site",
     "challenge": "What was there",
     "approach": "What we did",
@@ -111,6 +112,7 @@
     "sending": "Sending…",
     "success": "Got it. We’ll be in touch.",
     "error": "That didn’t send. Call the studio at 514-348-1161.",
+    "privacy": "We use your name, email, and message to reply. We don’t sell them.",
     "types": {
       "rebuild": "Rebuild / redesign my site",
       "new": "Brand-new website",

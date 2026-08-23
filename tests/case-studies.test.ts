@@ -30,6 +30,18 @@ describe("caseStudies", () => {
       expect(c.image).toMatch(/^\/work\/.+\.jpe?g$/i);
     }
   });
+
+  it("Joe’s rebuild has a preview URL distinct from their live WordPress", () => {
+    const joes = getCaseStudy("joes-italian-kitchen");
+    expect(joes?.previewUrl).toBe("https://joes-italian-kitchen.netlify.app");
+    expect(joes?.liveUrl).toBe("https://joesitaliankitchen.ca");
+  });
+
+  it("every featured study has a clickable rebuild URL", () => {
+    for (const c of caseStudies.filter((s) => s.featured)) {
+      expect(c.previewUrl ?? c.liveUrl).toMatch(/^https?:\/\//);
+    }
+  });
 });
 
 

@@ -38,7 +38,13 @@ export function Button({
       href.startsWith("https://")
     ) {
       return (
-        <a href={href} className={classes}>
+        <a
+          href={href}
+          className={classes}
+          {...(href.startsWith("http://") || href.startsWith("https://")
+            ? { target: "_blank", rel: "noreferrer" }
+            : {})}
+        >
           {children}
         </a>
       );

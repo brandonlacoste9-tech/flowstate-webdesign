@@ -56,17 +56,17 @@ export async function CaseStudyView({
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             {study.summary[locale]}
           </p>
-          {href ? (
-            <p className="mt-6">
-              <a
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-full bg-text px-4 py-2 text-sm font-medium text-bg transition-colors hover:bg-white"
-              >
-                {t("viewPreview")} →
-              </a>
-            </p>
+          {href || study.liveUrl ? (
+            <div className="mt-6 flex flex-wrap gap-3">
+              {href ? (
+                <Button href={href}>{t("viewPreview")}</Button>
+              ) : null}
+              {study.liveUrl && study.liveUrl !== href ? (
+                <Button href={study.liveUrl} variant="secondary">
+                  {t("theirLiveSite")}
+                </Button>
+              ) : null}
+            </div>
           ) : null}
         </FadeIn>
 

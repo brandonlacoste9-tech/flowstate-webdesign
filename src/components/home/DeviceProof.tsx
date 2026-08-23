@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { Button } from "@/components/ui/Button";
 import { getCaseStudy, getWorkHref, getWorkHost } from "@/content/case-studies";
 
 const shots = [
@@ -25,16 +26,22 @@ const shots = [
 
 export async function DeviceProof() {
   const t = await getTranslations("home");
+  const tNav = await getTranslations("nav");
 
   return (
     <section className="py-16 sm:py-24">
       <Container>
         <FadeIn>
-          <SectionHeading
-            eyebrow={t("devicesEyebrow")}
-            title={t("devicesTitle")}
-            description={t("devicesDescription")}
-          />
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <SectionHeading
+              eyebrow={t("devicesEyebrow")}
+              title={t("devicesTitle")}
+              description={t("devicesDescription")}
+            />
+            <Button href="/work" variant="secondary" className="self-start sm:self-auto">
+              {tNav("work")}
+            </Button>
+          </div>
         </FadeIn>
         <div className="mt-12 grid gap-3 sm:grid-cols-2">
           {shots.map((shot, i) => {
