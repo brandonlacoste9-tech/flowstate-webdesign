@@ -281,6 +281,40 @@ export const caseStudies: CaseStudy[] = [
       fr: "La refonte est en ligne sur clinique-mdcm-gmf.netlify.app. Leur site reste jusqu’au basculement. Nous n’avons pas inventé une file walk-in ni un tarif RAMQ.",
     },
   },
+  {
+    slug: "fratelli-kanata",
+    niche: ["restaurant", "rebuild", "italian"],
+    year: "2026",
+    featured: true,
+    accent: "#7a1f2b",
+    image: "/work/fratelli-kanata.jpg",
+    beforeImage: "/work/before-fratelli-kanata.jpg",
+    liveUrl: "https://www.fratellikanata.ca/",
+    name: {
+      en: "Fratelli Kanata",
+      fr: "Fratelli Kanata",
+    },
+    title: {
+      en: "Fratelli Kanata — one room on Terry Fox, not Westboro",
+      fr: "Fratelli Kanata — une salle sur Terry Fox, pas Westboro",
+    },
+    summary: {
+      en: "A rebuild of fratellikanata.ca. 499 Terry Fox Drive. Tables by phone, (613) 592-0225. Parties of 10+ email events@fratelli-kanata.ca. Not fratelli.ca in Westboro.",
+      fr: "Une refonte de fratellikanata.ca. 499 Terry Fox Drive. Tables au téléphone, 613-592-0225. Groupes de 10 et plus : events@fratelli-kanata.ca. Pas fratelli.ca à Westboro.",
+    },
+    challenge: {
+      en: "Squarespace, English, one Kanata room. Reservations are the phone, not a form. Takeout is phone-only, with hours that are not the dine-in board. Their takeout link to kanata.fratelli.ca now lands on Fratelli Westboro — a different address, OpenTable, 275 Richmond Road. The menu is a photo of the board, not HTML prices.",
+      fr: "Squarespace, anglais, une salle à Kanata. Les réservations passent par le téléphone, pas un formulaire. L’à emporter est au téléphone, avec des heures qui ne sont pas celles du dine-in. Leur lien takeout vers kanata.fratelli.ca mène maintenant à Fratelli Westboro — autre adresse, OpenTable, 275, chemin Richmond. La carte est une photo, pas des prix HTML.",
+    },
+    approach: {
+      en: "We rebuilt the Kanata room only. Their photos, their board transcribed from the image they publish, their loft (32 seats, 20% auto gratuity for 8+). No booking form. No cart. Roberto Pizza is a link, not this kitchen. French is a courtesy toggle.",
+      fr: "On a reconstruit la salle de Kanata seulement. Leurs photos, leur carte transcrite de l’image qu’ils publient, leur loft (32 places, 20 % auto pour 8 et plus). Pas de formulaire. Pas de panier. Roberto Pizza est un lien, pas cette cuisine. Le français est une courtoisie.",
+    },
+    outcome: {
+      en: "A Next.js preview they can put live when they want. Their Squarespace stays until they switch. We did not send Kanata takeout to Westboro, and we did not invent an online order.",
+      fr: "Un aperçu Next.js qu’ils peuvent mettre en ligne. Leur Squarespace reste jusqu’au basculement. On n’envoie pas l’à emporter de Kanata à Westboro, et on n’invente pas de commande en ligne.",
+    },
+  },
 ];
 
 export function getCaseStudy(slug: string) {
