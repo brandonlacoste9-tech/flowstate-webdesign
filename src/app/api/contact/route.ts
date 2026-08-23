@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { contactSchema } from "@/lib/contact-schema";
 
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "brandonlacoste9@gmail.com";
+
 export async function POST(request: Request) {
   let json: unknown;
   try {
@@ -10,7 +12,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
 
-  // Honeypot: bots fill hidden fields — reject silently as success
   if (
     typeof json === "object" &&
     json !== null &&
@@ -29,12 +30,11 @@ export async function POST(request: Request) {
     );
   }
 
-  const data = parsed.data;
-  const to = process.env.CONTACT_TO_EMAIL ?? "brandonlacoste9@gmail.com";
-  const from =
-    process.env.CONTACT_FROM_EMAIL ??
-    "Flowstate Design <onboarding@resend.dev>";
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json({ fallback: true });
+  }
 
+  const data = parsed.data;
   const text = [
     `Name: ${data.name}`,
     `Email: ${data.email}`,
@@ -57,15 +57,12 @@ export async function POST(request: Request) {
     </div>
   `;
 
-  if (!process.env.RESEND_API_KEY) {
-    console.info("[contact:dev]", text);
-    return NextResponse.json({ ok: true, dev: true });
-  }
-
+  const from =
+    process.env.CONTACT_FROM_EMAIL ?? "Flowstate <onboarding@resend.dev>";
   const resend = new Resend(process.env.RESEND_API_KEY);
   const result = await resend.emails.send({
     from,
-    to: [to],
+    to: [TO_EMAIL],
     replyTo: data.email,
     subject: `[Flowstate] ${data.projectType} — ${data.name}`,
     text,
@@ -74,7 +71,7 @@ export async function POST(request: Request) {
 
   if (result.error) {
     console.error(result.error);
-    return NextResponse.json({ error: "Send failed" }, { status: 502 });
+    return NextResponse.json({ fallback: true });
   }
 
   return NextResponse.json({ ok: true });

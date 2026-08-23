@@ -28,4 +28,6 @@ CONTACT_TO_EMAIL=brandonlacoste9@gmail.com
 CONTACT_FROM_EMAIL=Flowstate <onboarding@resend.dev>
 ```
 
-Without `RESEND_API_KEY`, contact submissions log to the server and still return success (dev mode).
+Contact submissions go to `brandonlacoste9@gmail.com`.
+With `RESEND_API_KEY` they send through Resend; without it they still send via FormSubmit.
+The first FormSubmit delivery asks that inbox to confirm the address.

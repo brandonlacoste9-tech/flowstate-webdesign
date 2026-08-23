@@ -10,6 +10,56 @@ const budgets = ["u3", "3to6", "6to12", "12p", "tbd"] as const;
 
 type FormState = "idle" | "sending" | "success" | "error";
 
+const INBOX = "brandonlacoste9@gmail.com";
+
+async function sendToInbox(payload: {
+  name: string;
+  email: string;
+  projectType: string;
+  budget: string;
+  message: string;
+  locale: string;
+}) {
+  const text = [
+    `Name: ${payload.name}`,
+    `Email: ${payload.email}`,
+    `Project: ${payload.projectType}`,
+    `Budget: ${payload.budget}`,
+    `Locale: ${payload.locale}`,
+    "",
+    payload.message,
+  ].join("\n");
+
+  const res = await fetch(
+    `https://formsubmit.co/ajax/${encodeURIComponent(INBOX)}`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name: payload.name,
+        email: payload.email,
+        _replyto: payload.email,
+        _subject: `[Flowstate] ${payload.projectType} — ${payload.name}`,
+        _captcha: false,
+        message: text,
+      }),
+    },
+  );
+
+  const body = (await res.json().catch(() => ({}))) as {
+    success?: string | boolean;
+    message?: string;
+  };
+  if (body.success === true || body.success === "true") return true;
+  if (typeof body.message === "string" && /activat/i.test(body.message)) {
+    return true;
+  }
+  return false;
+}
+
 const fieldClass =
   "w-full rounded-[var(--radius)] border border-border bg-surface/60 px-4 py-2.5 text-sm text-text outline-none transition-colors placeholder:text-muted/60 focus:border-accent focus:ring-1 focus:ring-accent";
 
@@ -30,38 +80,57 @@ export function ContactForm() {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    if (company.trim()) {
+      setState("success");
+      return;
+    }
     setState("sending");
+
+    const payload = {
+      name,
+      email,
+      projectType,
+      budget,
+      message,
+      locale,
+      company,
+    };
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name,
-          email,
-          projectType,
-          budget,
-          message,
-          locale,
-          company,
-        }),
+        body: JSON.stringify(payload),
       });
+      const json = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        fallback?: boolean;
+      };
 
-      if (!res.ok) {
-        setState("error");
+      if (res.ok && json.ok) {
+        finishSuccess();
         return;
       }
 
-      setState("success");
-      setName("");
-      setEmail("");
-      setProjectType("rebuild");
-      setBudget("tbd");
-      setMessage("");
-      setCompany("");
+      const delivered = await sendToInbox(payload);
+      if (!delivered) {
+        setState("error");
+        return;
+      }
+      finishSuccess();
     } catch {
       setState("error");
     }
+  }
+
+  function finishSuccess() {
+    setState("success");
+    setName("");
+    setEmail("");
+    setProjectType("rebuild");
+    setBudget("tbd");
+    setMessage("");
+    setCompany("");
   }
 
   const sending = state === "sending";
