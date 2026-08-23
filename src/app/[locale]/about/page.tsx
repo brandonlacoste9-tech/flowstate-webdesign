@@ -44,6 +44,19 @@ export default async function AboutPage({
               {t("body")}
             </p>
           </FadeIn>
+          <FadeIn delay={0.12}>
+            <div className="mt-12 overflow-hidden border border-border/60">
+              <video
+                src="/brand/flowstate-loop.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/og.png"
+                className="aspect-video w-full object-cover"
+              />
+            </div>
+          </FadeIn>
           <FadeIn delay={0.14}>
             <div className="mt-12 max-w-2xl border-t border-border/80 pt-6">
               <p className="font-mono text-xs uppercase tracking-[0.16em] text-accent">
