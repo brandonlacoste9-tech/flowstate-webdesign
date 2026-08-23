@@ -295,20 +295,20 @@ export const caseStudies: CaseStudy[] = [
       fr: "Fratelli Kanata",
     },
     title: {
-      en: "Fratelli Kanata — one room on Terry Fox, not Westboro",
-      fr: "Fratelli Kanata — une salle sur Terry Fox, pas Westboro",
+      en: "Fratelli Kanata — one location on Terry Fox, not Westboro",
+      fr: "Fratelli Kanata — un emplacement sur Terry Fox, pas Westboro",
     },
     summary: {
       en: "A rebuild of fratellikanata.ca. 499 Terry Fox Drive. Tables by phone, (613) 592-0225. Parties of 10+ email events@fratelli-kanata.ca. Not fratelli.ca in Westboro.",
       fr: "Une refonte de fratellikanata.ca. 499 Terry Fox Drive. Tables au téléphone, 613-592-0225. Groupes de 10 et plus : events@fratelli-kanata.ca. Pas fratelli.ca à Westboro.",
     },
     challenge: {
-      en: "Squarespace, English, one Kanata room. Reservations are the phone, not a form. Takeout is phone-only, with hours that are not the dine-in board. Their takeout link to kanata.fratelli.ca now lands on Fratelli Westboro — a different address, OpenTable, 275 Richmond Road. The menu is a photo of the board, not HTML prices.",
-      fr: "Squarespace, anglais, une salle à Kanata. Les réservations passent par le téléphone, pas un formulaire. L’à emporter est au téléphone, avec des heures qui ne sont pas celles du dine-in. Leur lien takeout vers kanata.fratelli.ca mène maintenant à Fratelli Westboro — autre adresse, OpenTable, 275, chemin Richmond. La carte est une photo, pas des prix HTML.",
+      en: "Squarespace, English, one Kanata location. Reservations are the phone, not a form. Takeout is phone-only, with hours that are not the dine-in board. Their takeout link to kanata.fratelli.ca now lands on Fratelli Westboro — a different address, OpenTable, 275 Richmond Road. The menu is a photo of the board, not HTML prices.",
+      fr: "Squarespace, anglais, un emplacement à Kanata. Les réservations passent par le téléphone, pas un formulaire. L’à emporter est au téléphone, avec des heures qui ne sont pas celles du dine-in. Leur lien takeout vers kanata.fratelli.ca mène maintenant à Fratelli Westboro — autre adresse, OpenTable, 275, chemin Richmond. La carte est une photo, pas des prix HTML.",
     },
     approach: {
-      en: "We rebuilt the Kanata room only. Their photos, their board transcribed from the image they publish, their loft (32 seats, 20% auto gratuity for 8+). No booking form. No cart. Roberto Pizza is a link, not this kitchen. French is a courtesy toggle.",
-      fr: "On a reconstruit la salle de Kanata seulement. Leurs photos, leur carte transcrite de l’image qu’ils publient, leur loft (32 places, 20 % auto pour 8 et plus). Pas de formulaire. Pas de panier. Roberto Pizza est un lien, pas cette cuisine. Le français est une courtoisie.",
+      en: "We rebuilt the Kanata location only. Their photos, their board transcribed from the image they publish, their loft (32 seats, 20% auto gratuity for 8+). No booking form. No cart. Roberto Pizza is a link, not this kitchen. French is a courtesy toggle.",
+      fr: "On a reconstruit l’emplacement de Kanata seulement. Leurs photos, leur carte transcrite de l’image qu’ils publient, leur loft (32 places, 20 % auto pour 8 et plus). Pas de formulaire. Pas de panier. Roberto Pizza est un lien, pas cette cuisine. Le français est une courtoisie.",
     },
     outcome: {
       en: "A Next.js preview they can put live when they want. Their Squarespace stays until they switch. We did not send Kanata takeout to Westboro, and we did not invent an online order.",
@@ -333,16 +333,16 @@ export const caseStudies: CaseStudy[] = [
       fr: "Fratelli Westboro — chemin Richmond, OpenTable",
     },
     summary: {
-      en: "A rebuild of fratelli.ca. 275 Richmond Rd, Ottawa K1Z 6X2. Tables on OpenTable (restref 1073479) or (613) 722-6772. juliana@fratelli.ca. Not the Kanata room.",
-      fr: "Une refonte de fratelli.ca. 275, chemin Richmond, Ottawa K1Z 6X2. Tables sur OpenTable ou 613-722-6772. juliana@fratelli.ca. Pas la salle de Kanata.",
+      en: "A rebuild of fratelli.ca. 275 Richmond Rd, Ottawa K1Z 6X2. Tables on OpenTable (restref 1073479) or (613) 722-6772. juliana@fratelli.ca. Not the Kanata location.",
+      fr: "Une refonte de fratelli.ca. 275, chemin Richmond, Ottawa K1Z 6X2. Tables sur OpenTable ou 613-722-6772. juliana@fratelli.ca. Pas l’emplacement de Kanata.",
     },
     challenge: {
-      en: "SpotHopper site, English. Hours group Thursday with Friday–Saturday until 10 pm. Reservations are OpenTable, not a form we should invent. Their leftover pickup JSON still prints Kanata’s 613-592-0225 — we do not use that on this room. The menu is lunch, dinner, dessert, specials, not Kanata’s photo board.",
+      en: "SpotHopper site, English. Hours group Thursday with Friday–Saturday until 10 pm. Reservations are OpenTable, not a form we should invent. Their leftover pickup JSON still prints Kanata’s 613-592-0225 — we do not use that on this location. The menu is lunch, dinner, dessert, specials, not Kanata’s photo board.",
       fr: "Site SpotHopper, anglais. Le jeudi est groupé avec ven.–sam. jusqu’à 22 h. Les réservations passent par OpenTable, pas un formulaire. Leur JSON takeout imprime encore le 613-592-0225 de Kanata — on ne l’utilise pas ici. Le menu est lunch/dîner/dessert/specials, pas la carte photo de Kanata.",
     },
     approach: {
-      en: "We put Westboro beside Kanata as a second room. OpenTable stays theirs. Parties stay on their live parties page. Menu transcribed from fratelli.ca. Half-price wine Monday 5–9 as they print it.",
-      fr: "Westboro à côté de Kanata comme deuxième salle. OpenTable reste le leur. Les événements restent sur leur page. Menu transcrit de fratelli.ca. Vin à moitié prix le lundi 17 h–21 h, comme ils l’impriment.",
+      en: "We put Westboro beside Kanata as a second location. OpenTable stays theirs. Parties stay on their live parties page. Menu transcribed from fratelli.ca. Half-price wine Monday 5–9 as they print it.",
+      fr: "Westboro à côté de Kanata comme deuxième emplacement. OpenTable reste le leur. Les événements restent sur leur page. Menu transcrit de fratelli.ca. Vin à moitié prix le lundi 17 h–21 h, comme ils l’impriment.",
     },
     outcome: {
       en: "The family preview has two doors. We did not give Westboro Kanata’s takeout hours, and we did not take a table.",
