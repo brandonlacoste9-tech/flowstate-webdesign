@@ -47,12 +47,12 @@ export default async function AboutPage({
           <FadeIn delay={0.12}>
             <div className="mt-12 overflow-hidden border border-border/60">
               <video
-                src="/brand/flowstate-loop.mp4"
+                src="/brand/hero-loop.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-                poster="/og.png"
+                poster="/brand/hero-poster.jpg"
                 className="aspect-video w-full object-cover"
               />
             </div>

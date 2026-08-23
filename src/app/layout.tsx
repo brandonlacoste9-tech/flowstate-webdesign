@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   },
   description:
     "We rebuild the website you already have, and we build new ones. A studio in Montreal.",
+  openGraph: {
+    type: "website",
+    locale: "en_CA",
+    siteName: "Flowstate",
+  },
 };
 
 export default function RootLayout({

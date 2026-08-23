@@ -14,6 +14,17 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden">
+      <video
+        src="/brand/hero-loop.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/brand/hero-poster.jpg"
+        preload="metadata"
+        className="pointer-events-none absolute inset-0 h-full w-full scale-110 object-cover opacity-[0.2] blur-2xl"
+        aria-hidden
+      />
       <div
         className="flow-orb pointer-events-none absolute -left-1/4 top-[-20%] h-[420px] w-[420px] rounded-full opacity-10 blur-3xl sm:h-[560px] sm:w-[560px]"
         style={{

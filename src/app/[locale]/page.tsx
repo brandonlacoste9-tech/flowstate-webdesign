@@ -3,6 +3,7 @@ import { Hero } from "@/components/home/Hero";
 import { WorkMarquee } from "@/components/home/WorkMarquee";
 import { ProofStrip } from "@/components/home/ProofStrip";
 import { FeaturedWork } from "@/components/home/FeaturedWork";
+import { DeviceProof } from "@/components/home/DeviceProof";
 import { FinalCta } from "@/components/home/FinalCta";
 
 export async function generateMetadata({
@@ -40,6 +41,7 @@ export default async function HomePage({
       <Hero />
       <WorkMarquee />
       <FeaturedWork />
+      <DeviceProof />
       <ProofStrip />
       <FinalCta />
     </>
