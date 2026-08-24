@@ -290,6 +290,7 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/fratelli-kanata.jpg",
     beforeImage: "/work/before-fratelli-kanata.jpg",
     liveUrl: "https://www.fratellikanata.ca/",
+    previewUrl: "https://fratellikanata.netlify.app",
     name: {
       en: "Fratelli Kanata",
       fr: "Fratelli Kanata",
@@ -324,6 +325,7 @@ export const caseStudies: CaseStudy[] = [
     image: "/work/fratelli-westboro.jpg",
     beforeImage: "/work/before-fratelli-westboro.jpg",
     liveUrl: "https://fratelli.ca/",
+    previewUrl: "https://fratelliwestboro.netlify.app",
     name: {
       en: "Fratelli Westboro",
       fr: "Fratelli Westboro",
